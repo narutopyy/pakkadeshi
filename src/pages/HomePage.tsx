@@ -211,7 +211,7 @@ const HomePage = () => {
           <div className="w-full md:w-1/2 h-[500px] bg-primary relative flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_white,_transparent_70%)]" />
             <img
-              src={bottleFrontAsset.url}
+              src={bottleFrontAsset}
               alt="Front view of Pakka Deshi cold pressed mustard oil bottle"
               className="relative z-10 max-h-[86%] object-contain drop-shadow-2xl"
               loading="lazy"

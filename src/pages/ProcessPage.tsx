@@ -161,7 +161,7 @@ const ProcessPage = () => {
             ) : (
               <div className="relative rounded-2xl overflow-hidden shadow-elevated">
                 <img
-                  src={bottleBackAsset.url}
+                  src={bottleBackAsset}
                   alt="Back label view of Pakka Deshi cold pressed mustard oil bottle"
                   className="w-full aspect-video object-contain bg-background"
                 />
