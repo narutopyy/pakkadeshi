@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Play, ArrowRight, Heart } from "lucide-react";
-import heroShowcaseAsset from "@/assets/pakka-deshi-hero-cold-pressed.png.asset.json";
-import bottleFrontAsset from "@/assets/pakka-deshi-bottle-front.png.asset.json";
+import heroShowcaseAsset from "@/assets/pakka-deshi-hero-cold-pressed.png";
+import bottleFrontAsset from "@/assets/pakka-deshi-bottle-front.png";
 import { useProducts, useWhatsAppSettings } from "@/hooks/useSiteSettings";
 import { useLanguage } from "@/hooks/useLanguage";
 
@@ -116,7 +116,7 @@ const HomePage = () => {
           <div className="lg:col-span-5 relative">
             <div className="aspect-[4/5] lg:aspect-[5/4] overflow-hidden relative bg-secondary/5 flex items-center justify-center">
               <img
-                src={heroShowcaseAsset.url}
+                src={heroShowcaseAsset}
                 alt="Pakka Deshi cold pressed mustard oil bottle with mustard seeds and traditional press"
                 className="w-full h-full object-cover object-center"
                 loading="eager"

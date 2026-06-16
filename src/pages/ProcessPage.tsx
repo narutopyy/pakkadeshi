@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Wheat, Sun, Settings, Clock, Droplets, ThermometerSun, CheckCircle } from "lucide-react";
-import heroImageAsset from "@/assets/pakka-deshi-hero-cold-pressed.png.asset.json";
-import bottleBackAsset from "@/assets/pakka-deshi-bottle-back.png.asset.json";
+import heroImageAsset from "@/assets/pakka-deshi-hero-cold-pressed.png";
+import bottleBackAsset from "@/assets/pakka-deshi-bottle-back.png";
 import { useWhatsAppSettings, useVideos } from "@/hooks/useSiteSettings";
 import { useLanguage } from "@/hooks/useLanguage";
 
@@ -122,7 +122,7 @@ const ProcessPage = () => {
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImageAsset.url} alt="Pakka Deshi cold pressed mustard oil bottle with mustard seeds and traditional press" className="w-full h-full object-cover object-center" />
+          <img src={heroImageAsset} alt="Pakka Deshi cold pressed mustard oil bottle with mustard seeds and traditional press" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
         </div>
         

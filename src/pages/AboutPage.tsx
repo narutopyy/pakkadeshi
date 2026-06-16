@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Heart, Users, Leaf, Award, MapPin, Calendar } from "lucide-react";
-import storyImageAsset from "@/assets/pakka-deshi-bottle-natural.png.asset.json";
+import storyImageAsset from "@/assets/pakka-deshi-bottle-natural.png";
 import { useWhatsAppSettings, useCertifications } from "@/hooks/useSiteSettings";
 import { useLanguage } from "@/hooks/useLanguage";
 
@@ -83,7 +83,7 @@ const AboutPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <img
-                src={storyImageAsset.url}
+                src={storyImageAsset}
                 alt="Pakka Deshi cold pressed mustard oil bottle in a natural farm setting"
                 className="w-full rounded-2xl shadow-elevated"
               />

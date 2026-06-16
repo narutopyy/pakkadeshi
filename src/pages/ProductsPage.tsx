@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Package, Star, Truck, ShieldCheck, Droplets } from "lucide-react";
-import bottleFrontAsset from "@/assets/pakka-deshi-bottle-front.png.asset.json";
-import bottleBackAsset from "@/assets/pakka-deshi-bottle-back.png.asset.json";
-import bottleNaturalAsset from "@/assets/pakka-deshi-bottle-natural.png.asset.json";
-import bottleHeroAsset from "@/assets/pakka-deshi-bottle-hero.png.asset.json";
+import bottleFrontAsset from "@/assets/pakka-deshi-bottle-front.png";
+import bottleBackAsset from "@/assets/pakka-deshi-bottle-back.png";
+import bottleNaturalAsset from "@/assets/pakka-deshi-bottle-natural.png";
+import bottleHeroAsset from "@/assets/pakka-deshi-bottle-hero.png";
 
-const productImages = [bottleFrontAsset.url, bottleBackAsset.url, bottleNaturalAsset.url, bottleHeroAsset.url];
+const productImages = [bottleFrontAsset, bottleBackAsset, bottleNaturalAsset, bottleHeroAsset];
 import { useProducts, useWhatsAppSettings } from "@/hooks/useSiteSettings";
 import { useLanguage } from "@/hooks/useLanguage";
 
