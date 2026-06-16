@@ -1,0 +1,1 @@
+UPDATE public.whatsapp_settings SET phone_number = '+917275402632' WHERE phone_number = '+917607562632';
