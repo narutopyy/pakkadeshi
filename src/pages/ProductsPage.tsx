@@ -75,10 +75,10 @@ const ProductsPage = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-8 md:gap-16">
             {[
-              { icon: Droplets, text: language === 'hi' ? "100% शुद्ध तेल" : "100% Pure Oil" },
-              { icon: ShieldCheck, text: language === 'hi' ? "गुणवत्ता सुनिश्चित" : "Quality Assured" },
+              { icon: Droplets, text: language === 'hi' ? "100% कोल्ड प्रेस्ड" : "100% Cold Pressed" },
+              { icon: ShieldCheck, text: language === 'hi' ? "कोई रसायन नहीं, अपरिष्कृत" : "No Chemicals, Unrefined" },
+              { icon: Package, text: language === 'hi' ? "अनप्रोसेस्ड, कोई परिरक्षक नहीं" : "Unprocessed, No Preservatives" },
               { icon: Truck, text: language === 'hi' ? "पूरे भारत में डिलीवरी" : "All India Delivery" },
-              { icon: Package, text: language === 'hi' ? "सुरक्षित पैकेजिंग" : "Secure Packaging" },
             ].map((badge) => (
               <div key={badge.text} className="flex items-center gap-2 text-muted-foreground">
                 <badge.icon className="w-5 h-5 text-primary" />

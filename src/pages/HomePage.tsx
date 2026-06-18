@@ -91,6 +91,9 @@ const HomePage = () => {
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="px-8 py-4 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-widest hover:bg-[hsl(var(--terracotta-dark))] transition-colors">
                 {language === "hi" ? "व्हाट्सएप पर ऑर्डर करें" : "Order on WhatsApp"}
               </a>
+              <Link to="/products" className="px-8 py-4 border-2 border-foreground text-foreground text-xs font-bold uppercase tracking-widest hover:bg-foreground hover:text-background transition-colors">
+                {language === "hi" ? "उत्पाद देखें" : "View Products"}
+              </Link>
               <Link to="/process" className="flex items-center gap-3 group">
                 <span className="w-12 h-12 rounded-full border border-foreground flex items-center justify-center group-hover:bg-foreground group-hover:text-background transition-all">
                   <Play className="w-4 h-4 fill-current" />
