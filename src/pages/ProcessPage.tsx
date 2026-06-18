@@ -122,7 +122,7 @@ const ProcessPage = () => {
       {/* Hero Section */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroImageAsset} alt="Pakka Deshi cold pressed mustard oil bottle with mustard seeds and traditional press" className="w-full h-full object-cover object-center" />
+          <img src={heroImageAsset} alt="Anika Edible Oil cold pressed mustard oil bottle with mustard seeds and traditional press" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background" />
         </div>
         
@@ -162,7 +162,7 @@ const ProcessPage = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-elevated">
                 <img
                   src={bottleBackAsset}
-                  alt="Back label view of Pakka Deshi cold pressed mustard oil bottle"
+                  alt="Back label view of Anika Edible Oil cold pressed mustard oil bottle"
                   className="w-full aspect-video object-contain bg-background"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/45 to-transparent" />

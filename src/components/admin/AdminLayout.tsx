@@ -103,7 +103,7 @@ const AdminLayout = ({ children, title }: AdminLayoutProps) => {
             <span className="text-primary-foreground font-display font-bold text-lg">प</span>
           </div>
           <div>
-            <h1 className="font-display font-bold">Pakka Deshi</h1>
+            <h1 className="font-display font-bold">Anika Edible Oil</h1>
             <p className="text-xs text-secondary-foreground/60">Admin Panel</p>
           </div>
         </div>

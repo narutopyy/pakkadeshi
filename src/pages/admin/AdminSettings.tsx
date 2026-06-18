@@ -99,7 +99,7 @@ const AdminSettings = () => {
                     id="site_name"
                     value={formData?.site_name || ''}
                     onChange={(e) => setFormData({ ...formData, site_name: e.target.value })}
-                    placeholder="Pakka Deshi"
+                    placeholder="Anika Edible Oil"
                   />
                 </div>
                 <div className="space-y-2">

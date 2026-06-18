@@ -63,8 +63,8 @@ const ProductsPage = () => {
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               {language === 'hi'
-                ? 'पक्का देसी तेल की हर बोतल शुद्धता, परंपरा और प्रामाणिक स्वाद का वादा है।'
-                : 'Each bottle of Pakka Deshi oil is a promise of purity, tradition, and authentic taste.'}
+                ? 'अनिका एडिबल ऑयल की हर बोतल शुद्धता, परंपरा और प्रामाणिक स्वाद का वादा है।'
+                : 'Each bottle of Anika Edible Oil is a promise of purity, tradition, and authentic taste.'}
             </p>
           </div>
         </div>

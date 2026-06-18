@@ -133,14 +133,14 @@ const BlogPostPage = () => {
     language === "hi" && post.content_hi ? post.content_hi : post.content || "";
   const excerpt =
     language === "hi" && post.excerpt_hi ? post.excerpt_hi : post.excerpt || "";
-  const shareMsg = encodeURIComponent(`${title} — https://pakka-deshi-digital-roots.lovable.app/blog/${post.slug}`);
+  const shareMsg = encodeURIComponent(`${title} — https://www.pureganix.in/blog/${post.slug}`);
 
   return (
     <div className="min-h-screen pt-20">
       <Helmet>
-        <title>{post.meta_title || `${title} | Pakka Deshi`}</title>
+        <title>{post.meta_title || `${title} | Anika Edible Oil`}</title>
         <meta name="description" content={post.meta_description || excerpt} />
-        <link rel="canonical" href={`https://pakka-deshi-digital-roots.lovable.app/blog/${post.slug}`} />
+        <link rel="canonical" href={`https://www.pureganix.in/blog/${post.slug}`} />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={post.meta_description || excerpt} />
@@ -154,7 +154,7 @@ const BlogPostPage = () => {
             headline: title,
             datePublished: post.published_at,
             image: post.featured_image_url || undefined,
-            author: { "@type": "Organization", name: "Pakka Deshi" },
+            author: { "@type": "Organization", name: "Anika Edible Oil" },
           })}
         </script>
       </Helmet>

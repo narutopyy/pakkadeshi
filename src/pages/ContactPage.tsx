@@ -301,7 +301,7 @@ const ContactPage = () => {
                 <p className="text-muted-foreground mb-4">
                   {language === 'hi' ? (
                     <>
-                      पक्का देसी तेल मिल<br />
+                      अनिका एडिबल ऑयल तेल मिल<br />
                       गाँव भगवानपुर, मुख्य बाज़ार के पास<br />
                       जिला बलरामपुर, उत्तर प्रदेश, भारत<br />
                       पिन कोड: 271201<br />
@@ -309,7 +309,7 @@ const ContactPage = () => {
                     </>
                   ) : (
                     <>
-                      Pakka Deshi Oil Mill<br />
+                      Anika Edible Oil Oil Mill<br />
                       Village Bhagwanpur, Near Main Market<br />
                       District Balrampur, Uttar Pradesh, India<br />
                       Pin Code: 271201<br />
@@ -326,7 +326,7 @@ const ContactPage = () => {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    title="Pakka Deshi Location"
+                    title="Anika Edible Oil Location"
                   />
                 </div>
               </div>

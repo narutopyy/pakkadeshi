@@ -316,7 +316,7 @@ const FarmersPage = () => {
                     : "\"Production will remain limited and quality-focused, because high-quality seeds are not easily available in the market.\""}
                 </p>
                 <p className="text-sm opacity-60 uppercase tracking-widest">
-                  {isHi ? "— पक्का देसी दर्शन" : "— Pakka Deshi Philosophy"}
+                  {isHi ? "— अनिका एडिबल ऑयल दर्शन" : "— Anika Edible Oil Philosophy"}
                 </p>
               </div>
               <div className="mt-8 grid sm:grid-cols-2 gap-4">

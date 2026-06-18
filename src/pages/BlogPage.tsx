@@ -12,9 +12,9 @@ const BlogPage = () => {
   return (
     <div className="min-h-screen pt-20">
       <Helmet>
-        <title>Blog — Pakka Deshi | Pure Cold-Pressed Mustard Oil</title>
-        <meta name="description" content="Stories, recipes and traditional wisdom from Pakka Deshi — pure cold pressed mustard oil from Balrampur, U.P." />
-        <link rel="canonical" href="https://pakka-deshi-digital-roots.lovable.app/blog" />
+        <title>Blog — Anika Edible Oil | Pure Cold-Pressed Mustard Oil</title>
+        <meta name="description" content="Stories, recipes and traditional wisdom from Anika Edible Oil — pure cold pressed mustard oil from Balrampur, U.P." />
+        <link rel="canonical" href="https://www.pureganix.in/blog" />
       </Helmet>
 
       <section className="py-12 md:py-20 bg-hero-pattern">

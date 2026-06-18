@@ -101,7 +101,7 @@ const AdminLogin = () => {
                 Admin Panel
               </CardTitle>
               <CardDescription className="text-muted-foreground">
-                Pakka Deshi Management System
+                Anika Edible Oil Management System
               </CardDescription>
             </div>
           </CardHeader>
@@ -181,7 +181,7 @@ const AdminLogin = () => {
         </Card>
 
         <p className="text-center text-sm text-secondary-foreground/60 mt-6">
-          © {new Date().getFullYear()} Pakka Deshi. All rights reserved.
+          © {new Date().getFullYear()} Anika Edible Oil. All rights reserved.
         </p>
       </div>
     </div>

@@ -49,7 +49,7 @@ const AboutPage = () => {
   const milestones = [
     { year: "1975", event: language === 'hi' ? "परिवार ने बलरामपुर में पारंपरिक तेल निष्कर्षण शुरू किया" : "Family started traditional oil extraction in Balrampur" },
     { year: "2010", event: language === 'hi' ? "तीसरी पीढ़ी ने पारिवारिक व्यवसाय संभाला" : "Third generation takes over the family business" },
-    { year: "2018", event: language === 'hi' ? "पक्का देसी ब्रांड आधिकारिक रूप से लॉन्च" : "Pakka Deshi brand officially launched" },
+    { year: "2018", event: language === 'hi' ? "अनिका एडिबल ऑयल ब्रांड आधिकारिक रूप से लॉन्च" : "Anika Edible Oil brand officially launched" },
     { year: "2020", event: language === 'hi' ? "उत्तर प्रदेश भर में वितरण का विस्तार" : "Expanded distribution across Uttar Pradesh" },
     { year: "2023", event: language === 'hi' ? "WhatsApp ऑर्डर के माध्यम से पूरे भारत में डिलीवरी शुरू" : "Started pan-India delivery via WhatsApp orders" },
     { year: "2024", event: language === 'hi' ? "10,000+ खुश ग्राहकों का मील का पत्थर" : "10,000+ happy customers milestone" },
@@ -70,8 +70,8 @@ const AboutPage = () => {
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed">
               {language === 'hi'
-                ? 'बलरामपुर के एक छोटे से गाँव से पूरे भारत की रसोई तक, पक्का देसी सदियों पुरानी विधियों का उपयोग करके बेहतरीन कोल्ड-प्रेस्ड सरसों तेल का उत्पादन करने की पारिवारिक परंपरा को आगे बढ़ाता है।'
-                : 'From a small village in Balrampur to kitchens across India, Pakka Deshi carries forward a family tradition of producing the finest cold-pressed mustard oil using age-old methods.'}
+                ? 'बलरामपुर के एक छोटे से गाँव से पूरे भारत की रसोई तक, अनिका एडिबल ऑयल सदियों पुरानी विधियों का उपयोग करके बेहतरीन कोल्ड-प्रेस्ड सरसों तेल का उत्पादन करने की पारिवारिक परंपरा को आगे बढ़ाता है।'
+                : 'From a small village in Balrampur to kitchens across India, Anika Edible Oil carries forward a family tradition of producing the finest cold-pressed mustard oil using age-old methods.'}
             </p>
           </div>
         </div>
@@ -84,7 +84,7 @@ const AboutPage = () => {
             <div>
               <img
                 src={storyImageAsset}
-                alt="Pakka Deshi cold pressed mustard oil bottle in a natural farm setting"
+                alt="Anika Edible Oil cold pressed mustard oil bottle in a natural farm setting"
                 className="w-full rounded-2xl shadow-elevated"
               />
             </div>
@@ -96,8 +96,8 @@ const AboutPage = () => {
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   {language === 'hi'
-                    ? 'पक्का देसी एक सरल विश्वास से पैदा हुआ था - कि पारंपरिक सरसों तेल का शुद्ध, प्रामाणिक स्वाद सभी के लिए सुलभ होना चाहिए। हमारी कहानी बलरामपुर, उत्तर प्रदेश के सरसों के खेतों से शुरू होती है, जहां हमारा परिवार तीन पीढ़ियों से सरसों की खेती कर रहा है।'
-                    : "Pakka Deshi was born from a simple belief – that the pure, authentic taste of traditional mustard oil should be accessible to everyone. Our story begins in the mustard fields of Balrampur, Uttar Pradesh, where our family has been cultivating mustard for over three generations."}
+                    ? 'अनिका एडिबल ऑयल एक सरल विश्वास से पैदा हुआ था - कि पारंपरिक सरसों तेल का शुद्ध, प्रामाणिक स्वाद सभी के लिए सुलभ होना चाहिए। हमारी कहानी बलरामपुर, उत्तर प्रदेश के सरसों के खेतों से शुरू होती है, जहां हमारा परिवार तीन पीढ़ियों से सरसों की खेती कर रहा है।'
+                    : "Anika Edible Oil was born from a simple belief – that the pure, authentic taste of traditional mustard oil should be accessible to everyone. Our story begins in the mustard fields of Balrampur, Uttar Pradesh, where our family has been cultivating mustard for over three generations."}
                 </p>
                 <p>
                   {language === 'hi'
@@ -106,8 +106,8 @@ const AboutPage = () => {
                 </p>
                 <p>
                   {language === 'hi'
-                    ? 'आज, पक्का देसी पूरे भारत में हजारों परिवारों की सेवा करता है जो प्रामाणिकता और स्वास्थ्य को महत्व देते हैं। हमारी बेची गई हर बोतल में हमारी विरासत का सार और गुणवत्ता के प्रति हमारी प्रतिबद्धता है।'
-                    : 'Today, Pakka Deshi serves thousands of families across India who value authenticity and health. Every bottle we sell carries the essence of our heritage and our commitment to quality.'}
+                    ? 'आज, अनिका एडिबल ऑयल पूरे भारत में हजारों परिवारों की सेवा करता है जो प्रामाणिकता और स्वास्थ्य को महत्व देते हैं। हमारी बेची गई हर बोतल में हमारी विरासत का सार और गुणवत्ता के प्रति हमारी प्रतिबद्धता है।'
+                    : 'Today, Anika Edible Oil serves thousands of families across India who value authenticity and health. Every bottle we sell carries the essence of our heritage and our commitment to quality.'}
                 </p>
               </div>
             </div>

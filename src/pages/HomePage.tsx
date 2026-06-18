@@ -124,7 +124,7 @@ const HomePage = () => {
             <div className="aspect-[4/5] lg:aspect-[5/4] overflow-hidden relative bg-secondary/5 flex items-center justify-center">
               <img
                 src={heroShowcaseAsset}
-                alt="Pakka Deshi cold pressed mustard oil bottle with mustard seeds and traditional press"
+                alt="Anika Edible Oil cold pressed mustard oil bottle with mustard seeds and traditional press"
                 className="w-full h-full object-cover object-center"
                 loading="eager"
               />
@@ -219,7 +219,7 @@ const HomePage = () => {
             <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_white,_transparent_70%)]" />
             <img
               src={bottleFrontAsset}
-              alt="Front view of Pakka Deshi cold pressed mustard oil bottle"
+              alt="Front view of Anika Edible Oil cold pressed mustard oil bottle"
               className="relative z-10 max-h-[86%] object-contain drop-shadow-2xl"
               loading="lazy"
             />

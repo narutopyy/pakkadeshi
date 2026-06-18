@@ -55,8 +55,8 @@ const AIChatbot = () => {
         setMessages([{
           role: "assistant",
           content: language === 'hi'
-            ? "नमस्ते! 🙏 मैं पक्का देसी सहायक हूं। आज मैं आपकी कैसे मदद कर सकता हूं?"
-            : "Namaste! 🙏 I am the Pakka Deshi assistant. How can I help you today?"
+            ? "नमस्ते! 🙏 मैं अनिका एडिबल ऑयल सहायक हूं। आज मैं आपकी कैसे मदद कर सकता हूं?"
+            : "Namaste! 🙏 I am the Anika Edible Oil assistant. How can I help you today?"
         }]);
       }
 
@@ -147,7 +147,7 @@ const AIChatbot = () => {
               <Bot className="w-5 h-5 text-primary-foreground" />
             </div>
             <div>
-              <h3 className="font-display font-semibold">Pakka Deshi AI</h3>
+              <h3 className="font-display font-semibold">Anika Edible Oil AI</h3>
               <p className="text-xs text-secondary-foreground/70">
                 {language === 'hi' ? 'सरसों तेल के बारे में पूछें!' : 'Ask me about mustard oil!'}
               </p>
