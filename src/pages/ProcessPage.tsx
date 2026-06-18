@@ -25,8 +25,8 @@ const ProcessPage = () => {
       step: "01",
       title: language === 'hi' ? "बीज चयन" : "Seed Selection",
       description: language === 'hi' 
-        ? "हम बलरामपुर क्षेत्र के स्थानीय किसानों से बेहतरीन सरसों के बीजों का सावधानीपूर्वक चयन करते हैं। केवल इष्टतम तेल सामग्री वाले परिपक्व, स्वस्थ बीजों को ही चुना जाता है।"
-        : "We carefully select the finest mustard seeds from local farmers in Balrampur region. Only mature, healthy seeds with optimal oil content are chosen.",
+        ? "हम बलरामपुर और उत्तर प्रदेश के अन्य जिलों के स्थानीय किसानों से बेहतरीन देशी सरसों के बीजों का सावधानीपूर्वक चयन करते हैं। केवल इष्टतम तेल सामग्री वाले परिपक्व, स्वस्थ बीजों को ही चुना जाता है।"
+        : "We carefully select the finest indigenous mustard seeds from local farmers in Balrampur and other districts of Uttar Pradesh. Only mature, healthy seeds with optimal oil content are chosen.",
       details: language === 'hi' 
         ? ["स्थानीय खेतों से हाथ से चुने गए", "शुद्धता के लिए गुणवत्ता निरीक्षण", "केवल परिपक्व बीजों का चयन", "नियंत्रित परिस्थितियों में संग्रहीत"]
         : ["Hand-picked from local farms", "Quality inspection for purity", "Only mature seeds selected", "Stored in controlled conditions"],
@@ -47,11 +47,11 @@ const ProcessPage = () => {
       step: "03",
       title: language === 'hi' ? "कोल्ड प्रेस्ड निष्कर्षण" : "Cold Pressed Extraction",
       description: language === 'hi'
-        ? "बीजों को कम तापमान पर धीरे-धीरे प्रेस किया जाता है। कोई अतिरिक्त गर्मी नहीं, कोई रसायन नहीं — पोषक तत्व, सुगंध और स्वाद बेहतर रूप से सुरक्षित रहते हैं।"
-        : "Seeds are slowly pressed at low temperature. No added heat, no chemicals — nutrients, aroma and flavour stay intact.",
+        ? "बीजों को कम तापमान पर धीरे-धीरे प्रेस किया जाता है। कोई बाहरी गर्मी नहीं, कोई रसायन नहीं — पोषक तत्व, सुगंध और स्वाद बेहतर रूप से सुरक्षित रहते हैं।"
+        : "Seeds are slowly pressed at low temperature. No external heat added, no chemical use — nutrients, aroma and flavour stay intact.",
       details: language === 'hi'
-        ? ["कम तापमान कोल्ड प्रेस", "धीमी प्रेसिंग प्रक्रिया", "पोषक तत्वों की सुरक्षा", "बिना अतिरिक्त गर्मी"]
-        : ["Low-temperature cold press", "Slow pressing process", "Nutrient retention", "No added heat"],
+        ? ["कम तापमान कोल्ड प्रेस", "धीमी प्रेसिंग प्रक्रिया", "पोषक तत्वों की सुरक्षा", "कोई बाहरी गर्मी नहीं"]
+        : ["Low-temperature cold press", "Slow pressing process", "Nutrient retention", "No external heat added"],
     },
 
     {

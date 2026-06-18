@@ -79,8 +79,8 @@ const HomePage = () => {
 
             <p className="text-base md:text-lg max-w-lg mb-12 leading-relaxed text-foreground/75">
               {language === "hi"
-                ? "उत्तर प्रदेश के हृदय से शुद्ध, तीखी खुशबू वाला कोल्ड प्रेस्ड सरसों तेल — सीमित उत्पादन, उच्च गुणवत्ता और बिना किसी मिलावट के।"
-                : "Experience pure cold pressed mustard oil with rich aroma, natural pungency and quality-first production from the heart of Uttar Pradesh."}
+                ? "बलरामपुर, उत्तर प्रदेश के हृदय से शुद्ध कोल्ड प्रेस्ड सरसों तेल — भरपूर खुशबू, प्राकृतिक तीखापन और बेहतरीन गुणवत्ता।"
+                : "Experience Pure Cold Pressed Mustard Oil with rich aroma, natural pungency and quality — first production from the heart of Uttar Pradesh, Balrampur."}
             </p>
 
             <div className="flex flex-wrap gap-8 items-center">
@@ -130,8 +130,8 @@ const HomePage = () => {
                 </p>
                 <p className="text-xs opacity-80 leading-relaxed">
                   {language === "hi"
-                    ? "कोई रसायन नहीं, कोई कृत्रिम स्वाद नहीं, कोई अनावश्यक प्रोसेसिंग नहीं।"
-                    : "No chemicals, no artificial flavour, and no unnecessary processing."}
+                    ? "कोई रसायन नहीं, कोई कृत्रिम स्वाद नहीं, कोई परिरक्षक नहीं — पूरी तरह अनप्रोसेस्ड और अपरिष्कृत।"
+                    : "No chemicals, no artificial flavours, no preservatives — fully unprocessed and non-refined."}
                 </p>
               </div>
             </div>

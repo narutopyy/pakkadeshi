@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, MessageCircle, Instagram, Youtube, Facebook } from
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const whatsappLink =
-    "https://wa.me/917275402632?text=" + encodeURIComponent("Hello Pakka Deshi!");
+    "https://wa.me/917275402632?text=" + encodeURIComponent("Hello Anika Edible Oil!");
 
   return (
     <footer className="bg-secondary text-secondary-foreground">
@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-5">
             <h3 className="font-display font-black text-4xl uppercase tracking-tighter leading-none">
-              Pakka Deshi
+              Anika Edible Oil
             </h3>
             <p className="eyebrow text-primary mt-3">Balrampur Tradition · Est. 2024</p>
             <p className="text-sm text-secondary-foreground/70 leading-relaxed mt-6 max-w-sm">
@@ -65,7 +65,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
                 <span className="text-sm text-secondary-foreground/80">
-                  Village Bhagwan Pur, District Balrampur,<br />Uttar Pradesh — 271201
+                  Village Bhagwanpur, District Balrampur,<br />Uttar Pradesh, India<br />Pin Code: 271201
                 </span>
               </li>
               <li>
@@ -94,7 +94,7 @@ const Footer = () => {
       <div className="border-t border-secondary-foreground/10">
         <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-3">
           <p className="eyebrow text-secondary-foreground/50">
-            © {currentYear} Pakka Deshi — All rights reserved
+            © {currentYear} Anika Edible Oil — All rights reserved
           </p>
           <div className="flex gap-6 eyebrow">
             <Link to="/privacy" className="text-secondary-foreground/50 hover:text-primary">Privacy</Link>

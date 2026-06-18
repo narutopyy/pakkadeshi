@@ -22,7 +22,7 @@ const Navbar = () => {
 
   const whatsappNumber = whatsappSettings?.phone_number?.replace(/\D/g, "") || "917275402632";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-    "Hello Pakka Deshi! I want to know about your mustard oil."
+    "Hello Anika Edible Oil! I want to know about your cold pressed oil."
   )}`;
 
   return (
@@ -32,7 +32,7 @@ const Navbar = () => {
           {/* Brand wordmark */}
           <Link to="/" className="flex flex-col leading-none min-w-0">
             <span className="font-display font-black text-2xl tracking-tighter uppercase text-foreground">
-              Pakka Deshi
+              Anika Edible Oil
             </span>
             <span className="eyebrow text-foreground/60 mt-1 hidden sm:block">
               Est. Balrampur, UP
