@@ -45,7 +45,7 @@
   - Slug: `why-healthy-oil-matters-for-everyone`
   - Title (EN): *Why Healthy Oil Matters for Everyone*
   - Title (HI): *स्वस्थ तेल हर किसी के लिए क्यों ज़रूरी है*
-  - Full content (EN + HI) — ~600 words covering: hidden dangers of refined oils, benefits of cold-pressed mustard oil (omega-3, MUFA, antioxidants), heart/skin/immunity benefits, traditional Kachi Ghani process, who it helps (kids, elders, athletes, everyone), how to switch.
+  - Full content (EN + HI) — ~600 words covering: hidden dangers of refined oils, benefits of cold-pressed mustard oil (omega-3, MUFA, antioxidants), heart/skin/immunity benefits, traditional cold-pressed process, who it helps (kids, elders, athletes, everyone), how to switch.
   - Status: `published`, published_at: now, featured image: existing product image.
 
 ## Technical notes

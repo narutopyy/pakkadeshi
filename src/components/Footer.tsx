@@ -65,7 +65,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-primary shrink-0 mt-1" />
                 <span className="text-sm text-secondary-foreground/80">
-                  Village Barhani, Balrampur,<br />Uttar Pradesh — 271201
+                  Village Bhagwan Pur, District Balrampur,<br />Uttar Pradesh — 271201
                 </span>
               </li>
               <li>

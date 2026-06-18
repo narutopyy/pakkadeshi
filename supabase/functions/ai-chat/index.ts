@@ -21,13 +21,13 @@ serve(async (req) => {
 
   try {
     const { message, sessionId, language = "en" } = await req.json() as ChatRequest;
-    
-    const LOVABLE_API_KEY = Deno.env.get("LOVABLE_API_KEY");
+
+    const GEMINI_API_KEY = Deno.env.get("GEMINI_API_KEY");
     const SUPABASE_URL = Deno.env.get("SUPABASE_URL");
     const SUPABASE_SERVICE_ROLE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-    
-    if (!LOVABLE_API_KEY) {
-      throw new Error("LOVABLE_API_KEY is not configured");
+
+    if (!GEMINI_API_KEY) {
+      throw new Error("GEMINI_API_KEY is not configured");
     }
 
     // Create Supabase client
@@ -41,11 +41,11 @@ serve(async (req) => {
 
     if (!aiSettings?.is_enabled) {
       return new Response(
-        JSON.stringify({ 
-          response: language === "hi" 
+        JSON.stringify({
+          response: language === "hi"
             ? "चैटबॉट वर्तमान में उपलब्ध नहीं है। कृपया WhatsApp पर संपर्क करें।"
             : "Chatbot is currently unavailable. Please contact us on WhatsApp.",
-          isEnabled: false 
+          isEnabled: false
         }),
         { headers: { ...corsHeaders, "Content-Type": "application/json" } }
       );
@@ -71,19 +71,19 @@ serve(async (req) => {
       .single();
 
     // Build knowledge context
-    const knowledgeContext = knowledgeBase?.map(kb => 
+    const knowledgeContext = knowledgeBase?.map(kb =>
       language === "hi" && kb.content_hi ? kb.content_hi : kb.content
     ).join("\n\n") || "";
 
-    const productContext = products?.map(p => 
-      language === "hi" && p.name_hi 
+    const productContext = products?.map(p =>
+      language === "hi" && p.name_hi
         ? `${p.name_hi}: ${p.short_description_hi || p.short_description} - ₹${p.base_price}`
         : `${p.name}: ${p.short_description} - ₹${p.base_price}`
     ).join("\n") || "";
 
     // Build tone-specific instructions
     const toneInstructions = {
-      desi: language === "hi" 
+      desi: language === "hi"
         ? "अपने उत्तरों में गर्म, मित्रवत और पारंपरिक भारतीय स्वर का उपयोग करें। 'नमस्ते', 'जी' जैसे शब्दों का उपयोग करें।"
         : "Use a warm, friendly, and traditional Indian tone. Use words like 'Namaste', 'ji' to add a personal touch.",
       neutral: "Respond in a professional and helpful manner.",
@@ -111,59 +111,56 @@ IMPORTANT RULES:
 6. Respond in ${language === "hi" ? "Hindi" : "English"}.
 7. For pricing, always mention current product prices from the list above.`;
 
-    const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${LOVABLE_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        model: "google/gemini-2.5-flash",
-        messages: [
-          { role: "system", content: systemPrompt },
-          { role: "user", content: message },
-        ],
-        max_tokens: aiSettings.max_tokens || 500,
-      }),
-    });
+    // Call Google Gemini API directly
+    const response = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          systemInstruction: { parts: [{ text: systemPrompt }] },
+          contents: [{ role: "user", parts: [{ text: message }] }],
+          generationConfig: {
+            maxOutputTokens: aiSettings.max_tokens || 500,
+            temperature: Number(aiSettings.temperature) || 0.7,
+          },
+        }),
+      }
+    );
 
     if (!response.ok) {
       const errorText = await response.text();
-      console.error("AI Gateway error:", response.status, errorText);
-      
+      console.error("Gemini API error:", response.status, errorText);
+
       if (response.status === 429) {
         return new Response(
-          JSON.stringify({ 
+          JSON.stringify({
             error: "Rate limit exceeded. Please try again later.",
-            response: language === "hi" 
+            response: language === "hi"
               ? "कृपया थोड़ी देर बाद पुनः प्रयास करें।"
               : "Please try again in a moment."
           }),
           { status: 429, headers: { ...corsHeaders, "Content-Type": "application/json" } }
         );
       }
-      
-      if (response.status === 402) {
-        return new Response(
-          JSON.stringify({ 
-            error: "Service temporarily unavailable.",
-            response: language === "hi"
-              ? "सेवा अस्थायी रूप से अनुपलब्ध है। कृपया WhatsApp पर संपर्क करें।"
-              : "Service temporarily unavailable. Please contact us on WhatsApp."
-          }),
-          { status: 402, headers: { ...corsHeaders, "Content-Type": "application/json" } }
-        );
-      }
-      
-      throw new Error(`AI gateway error: ${response.status}`);
+
+      return new Response(
+        JSON.stringify({
+          error: "AI service unavailable.",
+          response: language === "hi"
+            ? "सेवा अस्थायी रूप से अनुपलब्ध है। कृपया WhatsApp पर संपर्क करें।"
+            : "Service temporarily unavailable. Please contact us on WhatsApp."
+        }),
+        { status: 502, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
     }
 
     const aiData = await response.json();
-    const aiResponse = aiData.choices?.[0]?.message?.content || 
+    const aiResponse = aiData.candidates?.[0]?.content?.parts?.[0]?.text ||
       (language === "hi" ? aiSettings.fallback_message_hi : aiSettings.fallback_message);
 
     const responseTime = Date.now() - startTime;
-    const tokensUsed = aiData.usage?.total_tokens || 0;
+    const tokensUsed = aiData.usageMetadata?.totalTokenCount || 0;
 
     // Log chat for analytics
     await supabase.from("chat_logs").insert({
@@ -187,7 +184,7 @@ IMPORTANT RULES:
   } catch (error) {
     console.error("Chat error:", error);
     return new Response(
-      JSON.stringify({ 
+      JSON.stringify({
         error: error instanceof Error ? error.message : "Unknown error",
         response: "Sorry, something went wrong. Please contact us on WhatsApp."
       }),

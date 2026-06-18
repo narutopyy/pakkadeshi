@@ -99,7 +99,7 @@ const ContactPage = () => {
     {
       icon: MapPin,
       title: language === 'hi' ? "पता" : "Address",
-      value: language === 'hi' ? "गाँव बरहनी, बलरामपुर, UP - 271201" : "Village Barhani, Balrampur, UP - 271201",
+      value: language === 'hi' ? "गाँव भगवान पुर, जिला बलरामपुर, UP - 271201" : "Village Bhagwan Pur, District Balrampur, UP - 271201",
       link: "https://maps.google.com",
     },
   ];
@@ -302,15 +302,15 @@ const ContactPage = () => {
                   {language === 'hi' ? (
                     <>
                       पक्का देसी तेल मिल<br />
-                      गाँव बरहनी, मुख्य बाज़ार के पास<br />
-                      बलरामपुर, उत्तर प्रदेश - 271201<br />
+                      गाँव भगवान पुर, मुख्य बाज़ार के पास<br />
+                      जिला बलरामपुर, उत्तर प्रदेश - 271201<br />
                       भारत
                     </>
                   ) : (
                     <>
                       Pakka Deshi Oil Mill<br />
-                      Village Barhani, Near Main Market<br />
-                      Balrampur, Uttar Pradesh - 271201<br />
+                      Village Bhagwan Pur, Near Main Market<br />
+                      District Balrampur, Uttar Pradesh - 271201<br />
                       India
                     </>
                   )}
