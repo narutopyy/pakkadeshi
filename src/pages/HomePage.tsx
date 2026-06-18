@@ -66,13 +66,13 @@ const HomePage = () => {
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[0.9] mb-8 text-foreground">
               {language === "hi" ? (
                 <>
-                  बलरामपुर का <br />
-                  <span className="text-primary">सुनहरा</span> सार।
+                  बलरामपुर की <br />
+                  <span className="text-gradient-gold italic">सुनहरी विरासत</span>।
                 </>
               ) : (
                 <>
-                  THE GOLDEN <br />
-                  <span className="text-primary">SOUL OF</span> BALRAMPUR.
+                  THE <span className="text-gradient-gold italic">GOLDEN</span> <br />
+                  SOUL OF <span className="text-gradient-gold italic">BALRAMPUR</span>.
                 </>
               )}
             </h1>
@@ -81,6 +81,10 @@ const HomePage = () => {
               {language === "hi"
                 ? "बलरामपुर, उत्तर प्रदेश के हृदय से शुद्ध कोल्ड प्रेस्ड सरसों तेल — भरपूर खुशबू, प्राकृतिक तीखापन और बेहतरीन गुणवत्ता।"
                 : "Experience Pure Cold Pressed Mustard Oil with rich aroma, natural pungency and quality — first production from the heart of Uttar Pradesh, Balrampur."}
+            </p>
+
+            <p className="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-primary mb-10 -mt-4">
+              Mustard Oil · Groundnut Oil · Coconut Oil · Sesame Oil
             </p>
 
             <div className="flex flex-wrap gap-8 items-center">

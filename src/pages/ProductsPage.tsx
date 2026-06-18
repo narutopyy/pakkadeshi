@@ -242,11 +242,7 @@ const ProductsPage = () => {
 
           <div className="text-center">
             <a
-              href={`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-                language === 'hi' 
-                  ? 'नमस्ते! मैं पक्का देसी तेल के बारे में अपनी समीक्षा साझा करना चाहता हूं।'
-                  : 'Hello! I want to share my review about Pakka Deshi oil.'
-              )}`}
+              href="https://share.google/rffQvMdXnvVG7miNT"
               target="_blank"
               rel="noopener noreferrer"
             >
