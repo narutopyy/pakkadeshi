@@ -35,7 +35,7 @@ const Navbar = () => {
               Anika Edible Oil
             </span>
             <span className="eyebrow text-foreground/60 mt-1 hidden sm:block">
-              Est. Balrampur, UP
+              Cold Pressed Edible Oil &amp; Food · Balrampur
             </span>
           </Link>
 

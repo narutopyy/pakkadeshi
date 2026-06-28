@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-5">
             <h3 className="font-display font-black text-4xl uppercase tracking-tighter leading-none">
-              Anika Edible Oil
+              Anika Edible Oil &amp; Food
             </h3>
             <p className="eyebrow text-primary mt-3">Balrampur Tradition · Est. 2024</p>
             <p className="text-sm text-secondary-foreground/70 leading-relaxed mt-6 max-w-sm">

@@ -228,6 +228,20 @@ const HomePage = () => {
         </div>
       </section>
 
+      <section className="max-w-7xl mx-auto px-6 mb-32">
+        <div className="max-w-3xl">
+          <p className="eyebrow text-primary mb-4">{language === "hi" ? "हमारे बारे में" : "About Us"}</p>
+          <h2 className="font-display text-3xl md:text-4xl font-black mb-6 text-foreground">
+            Anika Edible Oil &amp; Food
+          </h2>
+          <p className="text-base md:text-lg leading-relaxed text-foreground/75">
+            {language === "hi"
+              ? "अनिका एडिबल ऑयल एंड फूड बलरामपुर, उत्तर प्रदेश का एक कोल्ड प्रेस्ड खाद्य तेल ब्रांड है। हम 100% केमिकल-फ्री, अनरिफाइंड और अनप्रोसेस्ड सरसों तेल, मूंगफली तेल और अन्य खाद्य तेल बनाते हैं — बिना किसी परिरक्षक, बिना बाहरी गर्मी और बिना किसी कृत्रिम रंग या स्वाद के। अनिका एडिबल ऑयल एंड फूड की हर बोतल कोल्ड प्रेस्ड तेल का शुद्ध, पारंपरिक स्वाद देती है।"
+              : "Anika Edible Oil & Food is a cold pressed edible oil brand from Village Bhagwanpur, Balrampur, Uttar Pradesh. We make 100% chemical-free, unrefined and unprocessed mustard oil, groundnut oil and other edible oils — with no preservatives, no added external heat and no artificial colours or flavours. Every bottle of Anika Edible Oil & Food carries the pure, traditional taste of cold pressed oil, delivered across Purvanchal and all India."}
+          </p>
+        </div>
+      </section>
+
       <section className="bg-secondary text-secondary-foreground">
         <div className="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-12 gap-8 items-end">
           <div className="md:col-span-8">
